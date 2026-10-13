@@ -1,301 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PNTech — Estúdio de Design & Tecnologia</title>
-  <meta name="description" content="PNTech é um estúdio de design e tecnologia, entregando produtos digitais, marcas e experiências imersivas para clientes em todo o Brasil." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNTech — Design & Tecnologia</title>
+    <meta name="description" content="PNTech é um estúdio de design e tecnologia, criando experiências digitais e marcas com alto impacto para clientes do Brasil." />
+    <meta property="og:title" content="PNTech — Design & Tecnologia" />
+    <meta property="og:description" content="Portfólio e contato da PNTech." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peuofc927-cmd.github.io/site_demo/" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23050505'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='42' font-family='Arial' font-weight='700' fill='%23c8ff00'%3EPN%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="PNTech — Estúdio de Design & Tecnologia" />
-  <meta property="og:description" content="PNTech - design, desenvolvimento e experiência digital. Portfólio e contato: pntech.digital@gmail.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://peuofc927-cmd.github.io/site_demo/" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23c8ff00'/%3E%3Ctext x='50' y='58' font-size='42' text-anchor='middle' font-family='Inter, Arial' fill='%23050505'%3EPN%3C/text%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
-
-  <div class="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-logo">PNTech</div>
-      <div class="preloader-progress">
-        <div class="preloader-bar"></div>
-      </div>
-      <div class="preloader-percent">0%</div>
-    </div>
-  </div>
-
-  <nav class="nav">
-    <div class="nav-logo">
-      <a href="#hero" id="brand-logo">PNTech</a>
-    </div>
-    <div class="nav-links">
-      <a href="#work" class="nav-link" data-text="Trabalhos">Trabalhos</a>
-      <a href="#services" class="nav-link" data-text="Serviços">Serviços</a>
-      <a href="#about" class="nav-link" data-text="Sobre">Sobre</a>
-      <a href="#contact" class="nav-link" data-text="Contato">Contato</a>
-    </div>
-    <div class="nav-actions">
-      <a href="https://instagram.com/pntech.store" class="nav-cta social" target="_blank" rel="noopener">@pntech.store</a>
-      <button class="nav-burger" aria-label="Menu">
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <div class="mobile-menu">
-    <div class="mobile-menu-links">
-      <a href="#work">Trabalhos</a>
-      <a href="#services">Serviços</a>
-      <a href="#about">Sobre</a>
-      <a href="#contact">Contato</a>
-    </div>
-  </div>
-
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero-bg">
-        <div class="hero-gradient"></div>
-        <div class="hero-noise"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="line"></span>
-          <span>Excelência Digital</span>
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo">PNTech</div>
+        <div class="preloader-progress">
+          <div class="preloader-bar"></div>
         </div>
-        <h1 class="hero-title">
-          <span class="line-wrapper"><span class="line">PNTech</span></span>
-          <span class="line-wrapper"><span class="line">Design &</span></span>
-          <span class="line-wrapper"><span class="line">Tecnologia</span></span>
-        </h1>
-        <p class="hero-subtitle">
-          Projetos digitais e marcas para empresas que querem se destacar. Atendemos todo o Brasil — atendimento remoto.
-        </p>
-        <div class="hero-cta">
-          <a href="#work" class="btn-primary magnetic" data-strength="0.3">
-            <span>Ver Portfólio</span>
-          </a>
-          <a href="#contact" class="btn-secondary magnetic" data-strength="0.3">
-            <span>Entrar em Contato</span>
-          </a>
-        </div>
-      </div>
-      <div class="hero-scroll">
-        <span>Role</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <div class="marquee">
-      <div class="marquee-track">
-        <span>Design • Desenvolvimento • Motion • Branding • Consultoria •</span>
-        <span>Design • Desenvolvimento • Motion • Branding • Consultoria •</span>
+        <div class="preloader-percent">0%</div>
       </div>
     </div>
 
-    <section id="work" class="work">
-      <div class="section-header">
-        <span class="section-number">01</span>
-        <h2 class="section-title">Projetos selecionados</h2>
+    <nav class="nav">
+      <div class="nav-logo">
+        <a href="#hero">PNTech</a>
       </div>
-      <div class="work-grid">
-        <article class="work-item" data-index="01">
-          <a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">
-            <div class="work-image project-cover cover-ai">
-              <div class="project-cover-inner">
-                <span class="project-kicker">AI</span>
-                <span class="project-title">autocontent-ai</span>
-              </div>
-              <div class="work-overlay"></div>
-            </div>
-            <div class="work-info">
-              <h3>autocontent-ai</h3>
-              <p>Geração automática de conteúdo</p>
-            </div>
-          </a>
-        </article>
 
-        <article class="work-item" data-index="02">
-          <a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">
-            <div class="work-image project-cover cover-portfolio">
-              <div class="project-cover-inner">
-                <span class="project-kicker">PORTFÓLIO</span>
-                <span class="project-title">meu-portf-lio</span>
-              </div>
-              <div class="work-overlay"></div>
-            </div>
-            <div class="work-info">
-              <h3>meu-portfólio</h3>
-              <p>Apresentação de trabalhos</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="work-item" data-index="03">
-          <a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">
-            <div class="work-image project-cover cover-nexus">
-              <div class="project-cover-inner">
-                <span class="project-kicker">IA</span>
-                <span class="project-title">NEXUSCORE</span>
-              </div>
-              <div class="work-overlay"></div>
-            </div>
-            <div class="work-info">
-              <h3>NEXUSCORE-IA</h3>
-              <p>Soluções de automação</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="work-item" data-index="04">
-          <a href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">
-            <div class="work-image project-cover cover-demo">
-              <div class="project-cover-inner">
-                <span class="project-kicker">SITE</span>
-                <span class="project-title">site_demo</span>
-              </div>
-              <div class="work-overlay"></div>
-            </div>
-            <div class="work-info">
-              <h3>site_demo</h3>
-              <p>Exemplo de site interativo</p>
-            </div>
-          </a>
-        </article>
+      <div class="nav-links">
+        <a href="#work" class="nav-link" data-text="Trabalhos">Trabalhos</a>
+        <a href="#services" class="nav-link" data-text="Serviços">Serviços</a>
+        <a href="#about" class="nav-link" data-text="Sobre">Sobre</a>
+        <a href="#contact" class="nav-link" data-text="Contato">Contato</a>
       </div>
-    </section>
 
-    <section id="services" class="services">
-      <div class="section-header">
-        <span class="section-number">02</span>
-        <h2 class="section-title">O que fazemos</h2>
+      <div class="nav-actions">
+        <a href="https://instagram.com/pntech.store" class="nav-cta social" target="_blank" rel="noopener">@pntech.store</a>
+        <button class="nav-menu-toggle" aria-label="Abrir menu">
+          <span>Menu</span>
+        </button>
       </div>
-      <div class="services-list">
-        <div class="service-item">
-          <div class="service-number">01</div>
-          <div class="service-content">
-            <h3>Estratégia de Marca</h3>
-            <p>Construímos identidades que se destacam e comunicam valor.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item">
-          <div class="service-number">02</div>
-          <div class="service-content">
-            <h3>Design de Produto</h3>
-            <p>Experiências digitais intuitivas e de alto impacto.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item">
-          <div class="service-number">03</div>
-          <div class="service-content">
-            <h3>Web Imersiva</h3>
-            <p>Sites com motion e interações diferenciadas.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-      </div>
-    </section>
+    </nav>
 
-    <section id="about" class="about">
-      <div class="about-content">
-        <div class="about-left">
-          <span class="section-number">03</span>
-          <h2 class="section-title">Quem somos</h2>
-        </div>
-        <div class="about-right">
-          <p class="about-text">
-            PNTech é um estúdio focado em design e tecnologia. Atendemos todo o Brasil com soluções remotas e entregas de alta qualidade.
-          </p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number" data-target="120">0</span>
-              <span class="stat-label">Projetos</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number" data-target="1">0</span>
-              <span class="stat-label">Países</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number" data-target="2">0</span>
-              <span class="stat-label">Anos</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="contact-inner">
-        <h2 class="contact-title">
-          <span class="line-wrapper"><span class="line">Vamos criar</span></span>
-          <span class="line-wrapper"><span class="line">algo</span></span>
-          <span class="line-wrapper"><span class="line">extraordinário</span></span>
-        </h2>
-        <div class="contact-ctas">
-          <a href="mailto:pntech.digital@gmail.com" class="contact-email magnetic" data-strength="0.2">pntech.digital@gmail.com</a>
-          <a href="https://instagram.com/pntech.store" class="contact-cta" target="_blank" rel="noopener">@pntech.store</a>
-        </div>
-        <p class="contact-location">Atendemos todo o Brasil • Base: Itaparica, BA (atendimento online)</p>
-      </div>
-    </section>
-
-    <section id="github" class="github-portfolio">
-      <div class="section-header">
-        <span class="section-number">04</span>
-        <h2 class="section-title">Portfólio no GitHub</h2>
-      </div>
-      <div class="github-grid">
-        <div class="repo-card">
-          <h3>Meu perfil no GitHub</h3>
-          <p>Veja mais repositórios e projetos aqui.</p>
-          <a class="repo-link" href="https://github.com/peuofc927-cmd" target="_blank" rel="noopener">Visitar GitHub</a>
-        </div>
-        <div class="repo-card">
-          <h3>Projetos em destaque</h3>
-          <ul>
-            <li><a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">autocontent-ai</a></li>
-            <li><a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">meu-portf-lio</a></li>
-            <li><a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">NEXUSCORE-IA</a></li>
-            <li><a href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">site_demo</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-logo">PNTech</div>
-      <div class="footer-links">
+    <div class="mobile-menu">
+      <div class="mobile-menu-links">
+        <a href="#work">Trabalhos</a>
+        <a href="#services">Serviços</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
         <a href="https://instagram.com/pntech.store" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
-        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 PNTech. Todos os direitos reservados.</p>
-      <p>Design & desenvolvimento — PNTech</p>
-    </div>
-  </footer>
 
-  <a class="floating-cta" href="#github" aria-label="Ver portfólio">Ver portfólio</a>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-bg">
+          <div class="hero-gradient"></div>
+          <div class="hero-noise"></div>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="line"></span>
+            <span>Excelência Digital</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line-wrapper"><span class="line">Design</span></span>
+            <span class="line-wrapper"><span class="line">com</span></span>
+            <span class="line-wrapper"><span class="line">impacto.</span></span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Sites, marcas e produtos digitais para empresas que querem parecer premium, converter melhor e crescer com uma presença forte.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#work" class="btn-primary magnetic" data-strength="0.25"><span>Ver portfólio</span></a>
+            <a href="#contact" class="btn-secondary magnetic" data-strength="0.2"><span>Falar com a PNTech</span></a>
+          </div>
+        </div>
+
+        <div class="hero-scroll">
+          <span>Role</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Design • Desenvolvimento • Branding • Motion • Estratégia •</span>
+          <span>Design • Desenvolvimento • Branding • Motion • Estratégia •</span>
+        </div>
+      </div>
+
+      <section id="work" class="work">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Projetos</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-item">
+            <a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">
+              <div class="work-image cover-ai">
+                <img src="assets/cover-ai.svg" alt="autocontent-ai" loading="lazy" decoding="async" />
+                <div class="project-cover-inner">
+                  <span class="project-kicker">AI</span>
+                  <span class="project-title">autocontent-ai</span>
+                </div>
+                <div class="work-overlay"></div>
+              </div>
+              <div class="work-info">
+                <h3>autocontent-ai</h3>
+                <p>Conteúdo automatizado</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-item">
+            <a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">
+              <div class="work-image cover-portfolio">
+                <img src="assets/cover-portfolio.svg" alt="meu-portf-lio" loading="lazy" decoding="async" />
+                <div class="project-cover-inner">
+                  <span class="project-kicker">PORTFÓLIO</span>
+                  <span class="project-title">meu-portf-lio</span>
+                </div>
+                <div class="work-overlay"></div>
+              </div>
+              <div class="work-info">
+                <h3>meu-portf-lio</h3>
+                <p>Apresentação criativa</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-item">
+            <a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">
+              <div class="work-image cover-nexus">
+                <img src="assets/cover-nexus.svg" alt="NEXUSCORE-IA" loading="lazy" decoding="async" />
+                <div class="project-cover-inner">
+                  <span class="project-kicker">IA</span>
+                  <span class="project-title">NEXUSCORE</span>
+                </div>
+                <div class="work-overlay"></div>
+              </div>
+              <div class="work-info">
+                <h3>NEXUSCORE-IA</h3>
+                <p>Automação inteligente</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-item">
+            <a href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">
+              <div class="work-image cover-demo">
+                <img src="assets/cover-demo.svg" alt="site_demo" loading="lazy" decoding="async" />
+                <div class="project-cover-inner">
+                  <span class="project-kicker">SITE</span>
+                  <span class="project-title">site_demo</span>
+                </div>
+                <div class="work-overlay"></div>
+              </div>
+              <div class="work-info">
+                <h3>site_demo</h3>
+                <p>Landing page interativa</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Serviços</h2>
+        </div>
+
+        <div class="services-list">
+          <div class="service-item">
+            <div class="service-number">01</div>
+            <div class="service-content">
+              <h3>Branding & posicionamento</h3>
+              <p>Identidade visual estratégica para marcas que querem ser lembradas.</p>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-number">02</div>
+            <div class="service-content">
+              <h3>Design digital</h3>
+              <p>Experiências limpas, intuitivas e visualmente fortes para produto e web.</p>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-number">03</div>
+            <div class="service-content">
+              <h3>Landing pages & sites</h3>
+              <p>Presença digital com movimento, clareza e conversão em foco.</p>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-content">
+          <div class="about-left">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Sobre</h2>
+          </div>
+
+          <div class="about-right">
+            <p class="about-text">
+              A PNTech ajuda empresas e marcas a se posicionarem melhor no mercado com design, experiência e tecnologia. Trabalhamos com autonomia, atenção ao detalhe e visual premium.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="120">0</span>
+                <span class="stat-label">Projetos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-label">Países</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Anos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-inner">
+          <h2 class="contact-title">
+            <span class="line-wrapper"><span class="line">Vamos</span></span>
+            <span class="line-wrapper"><span class="line">construir</span></span>
+            <span class="line-wrapper"><span class="line">algo forte.</span></span>
+          </h2>
+
+          <div class="contact-ctas">
+            <a href="mailto:pntech.digital@gmail.com" class="contact-email magnetic" data-strength="0.18">pntech.digital@gmail.com</a>
+            <a href="https://instagram.com/pntech.store" class="contact-cta" target="_blank" rel="noopener">@pntech.store</a>
+          </div>
+
+          <p class="contact-location">Atendimento remoto • Brasil inteiro</p>
+        </div>
+      </section>
+
+      <section id="github" class="github-portfolio">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">GitHub</h2>
+        </div>
+
+        <div class="github-grid">
+          <div class="repo-card">
+            <h3>Perfil da PNTech</h3>
+            <p>Projetos, estudos e entregas em constante evolução.</p>
+            <a href="https://github.com/peuofc927-cmd" target="_blank" rel="noopener">Visitar GitHub</a>
+          </div>
+
+          <div class="repo-card">
+            <h3>Projetos em destaque</h3>
+            <ul>
+              <li><a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">autocontent-ai</a></li>
+              <li><a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">meu-portf-lio</a></li>
+              <li><a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">NEXUSCORE-IA</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">PNTech</div>
+        <div class="footer-links">
+          <a href="https://instagram.com/pntech.store" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PNTech.</p>
+        <p>Design & tecnologia.</p>
+      </div>
+    </footer>
+
+    <a class="floating-cta" href="#github" aria-label="Ver portfólio">Ver portfólio</a>
+
+    <script src="script.js"></script>
+  </body>
 </html>
