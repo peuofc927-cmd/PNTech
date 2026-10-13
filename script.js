@@ -310,35 +310,34 @@ function initPageAnimations() {
 // ============================================
 // Mobile Menu
 // ============================================
-const burger = document.querySelector('.nav-burger');
+const menuToggle = document.querySelector('.nav-menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-if (burger && mobileMenu) {
-  burger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    const spans = burger.querySelectorAll('span');
-    if (mobileMenu.classList.contains('active')) {
-      if (window.gsap) {
-        gsap.to(spans[0], { rotation: 45, y: 4, duration: 0.3 });
-        gsap.to(spans[1], { rotation: -45, y: -4, duration: 0.3 });
-      }
-    } else {
-      if (window.gsap) {
-        gsap.to(spans[0], { rotation: 0, y: 0, duration: 0.3 });
-        gsap.to(spans[1], { rotation: 0, y: 0, duration: 0.3 });
-      }
-    }
+function closeMobileMenu() {
+  if (!mobileMenu || !menuToggle) return;
+  mobileMenu.classList.remove('active');
+  menuToggle.classList.remove('active');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
+
+if (menuToggle && mobileMenu) {
+  menuToggle.setAttribute('aria-expanded', 'false');
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('active');
+    mobileMenu.classList.toggle('active', isOpen);
+    menuToggle.classList.toggle('active', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
   document.querySelectorAll('.mobile-menu-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
-      const spans = burger.querySelectorAll('span');
-      if (window.gsap) {
-        gsap.to(spans[0], { rotation: 0, y: 0, duration: 0.3 });
-        gsap.to(spans[1], { rotation: 0, y: 0, duration: 0.3 });
-      }
-    });
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    }
   });
 }
 
@@ -362,3 +361,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Start animations (preloader -> animations)
 startAnimations();
+
