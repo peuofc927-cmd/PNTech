@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AETHER — Design & Technology Studio</title>
-  <meta name="description" content="AETHER is a world-class design and technology studio creating extraordinary digital experiences." />
+  <title>AETHER — Estúdio de Design & Tecnologia</title>
+  <meta name="description" content="AETHER é um estúdio de design e tecnologia criando experiências digitais extraordinárias. Portfólio e contato PNTech." />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,8 +17,8 @@
   <!-- GSAP + Plugins -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <!-- Lenis (fixed CDN path) -->
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+  <!-- Lenis: CDN com caminho estável -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Custom Cursor -->
@@ -39,30 +39,30 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-logo">
-      <a href="#hero">AETHER</a>
+      <a href="#hero" id="brand-logo">AETHER</a>
     </div>
     <div class="nav-links">
-      <a href="#work" class="nav-link" data-text="Work">Work</a>
-      <a href="#services" class="nav-link" data-text="Services">Services</a>
-      <a href="#about" class="nav-link" data-text="About">About</a>
-      <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+      <a href="#work" class="nav-link" data-text="Trabalhos">Trabalhos</a>
+      <a href="#services" class="nav-link" data-text="Serviços">Serviços</a>
+      <a href="#about" class="nav-link" data-text="Sobre">Sobre</a>
+      <a href="#contact" class="nav-link" data-text="Contato">Contato</a>
     </div>
-    <button class="nav-cta magnetic" data-strength="0.4">
-      <span>Start a Project</span>
-    </button>
-    <button class="nav-burger" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
+    <div class="nav-actions">
+      <a href="https://instagram.com/pntech.store" class="nav-cta social" target="_blank" rel="noopener">@pntech.store</a>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </nav>
  
   <!-- Mobile Menu -->
   <div class="mobile-menu">
     <div class="mobile-menu-links">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#work">Trabalhos</a>
+      <a href="#services">Serviços</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
     </div>
   </div>
  
@@ -77,28 +77,28 @@
       <div class="hero-content">
         <div class="hero-eyebrow">
           <span class="line"></span>
-          <span>Digital Excellence</span>
+          <span>Excelência Digital</span>
         </div>
         <h1 class="hero-title">
-          <span class="line-wrapper"><span class="line">We craft</span></span>
-          <span class="line-wrapper"><span class="line">extraordinary</span></span>
-          <span class="line-wrapper"><span class="line">experiences</span></span>
+          <span class="line-wrapper"><span class="line">Criamos</span></span>
+          <span class="line-wrapper"><span class="line">experiências</span></span>
+          <span class="line-wrapper"><span class="line">extraordinárias</span></span>
         </h1>
         <p class="hero-subtitle">
-          A global studio specializing in high-end digital products, brand identities and immersive web experiences for forward-thinking companies.
+          Estúdio PNTech — design, desenvolvimento e experiência digital com entrega nacional e atendimento remoto.
         </p>
         <div class="hero-cta">
           <a href="#work" class="btn-primary magnetic" data-strength="0.3">
-            <span>Explore Work</span>
+            <span>Ver Trabalhos</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
           <a href="#contact" class="btn-secondary magnetic" data-strength="0.3">
-            <span>Get in Touch</span>
+            <span>Fale Conosco</span>
           </a>
         </div>
       </div>
       <div class="hero-scroll">
-        <span>Scroll</span>
+        <span>Role</span>
         <div class="scroll-line"></div>
       </div>
     </section>
@@ -106,26 +106,26 @@
     <!-- Marquee -->
     <div class="marquee">
       <div class="marquee-track">
-        <span>Strategy • Design • Development • Motion • Branding • Strategy • Design • Development • Motion • Branding •</span>
-        <span>Strategy • Design • Development • Motion • Branding • Strategy • Design • Development • Motion • Branding •</span>
+        <span>Design • Desenvolvimento • Motion • Branding • Consultoria •</span>
+        <span>Design • Desenvolvimento • Motion • Branding • Consultoria •</span>
       </div>
     </div>
 
-    <!-- Work -->
+    <!-- Work (mantido em inglês) -->
     <section id="work" class="work">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2 class="section-title">Selected Work</h2>
+        <h2 class="section-title">Projetos Selecionados</h2>
       </div>
       <div class="work-grid">
         <article class="work-item" data-index="01">
           <div class="work-image">
-            <div class="work-image-inner"></div>
+            <img src="assets/burger-hero.jpg" alt="Projeto destaque"/>
             <div class="work-overlay"></div>
           </div>
           <div class="work-info">
             <h3>Nova Finance</h3>
-            <p>Fintech Platform</p>
+            <p>Plataforma Fintech</p>
           </div>
         </article>
         <article class="work-item" data-index="02">
@@ -135,7 +135,7 @@
           </div>
           <div class="work-info">
             <h3>Lumen Health</h3>
-            <p>Healthcare App</p>
+            <p>Aplicativo de Saúde</p>
           </div>
         </article>
         <article class="work-item" data-index="03">
@@ -155,7 +155,7 @@
           </div>
           <div class="work-info">
             <h3>Vertex AI</h3>
-            <p>Product Design</p>
+            <p>Design de Produto</p>
           </div>
         </article>
       </div>
@@ -165,38 +165,30 @@
     <section id="services" class="services">
       <div class="section-header">
         <span class="section-number">02</span>
-        <h2 class="section-title">What We Do</h2>
+        <h2 class="section-title">O que fazemos</h2>
       </div>
       <div class="services-list">
         <div class="service-item">
           <div class="service-number">01</div>
           <div class="service-content">
-            <h3>Brand Strategy & Identity</h3>
-            <p>We build distinctive brands that resonate globally — from positioning to visual systems that scale across every touchpoint.</p>
+            <h3>Estratégia de Marca</h3>
+            <p>Construímos identidades que se destacam e comunicam valor.</p>
           </div>
           <div class="service-arrow">→</div>
         </div>
         <div class="service-item">
           <div class="service-number">02</div>
           <div class="service-content">
-            <h3>Digital Product Design</h3>
-            <p>End-to-end product experiences crafted with precision, usability and emotional impact at their core.</p>
+            <h3>Design de Produto</h3>
+            <p>Experiências digitais intuitivas e de alto impacto.</p>
           </div>
           <div class="service-arrow">→</div>
         </div>
         <div class="service-item">
           <div class="service-number">03</div>
           <div class="service-content">
-            <h3>Immersive Web Experiences</h3>
-            <p>Websites that feel alive — cinematic motion, seamless interactions and technical excellence.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item">
-          <div class="service-number">04</div>
-          <div class="service-content">
-            <h3>Motion & Interaction</h3>
-            <p>Animation systems that guide, delight and elevate every user journey.</p>
+            <h3>Web Imersiva</h3>
+            <p>Sites com motion e interações diferenciadas.</p>
           </div>
           <div class="service-arrow">→</div>
         </div>
@@ -208,54 +200,62 @@
       <div class="about-content">
         <div class="about-left">
           <span class="section-number">03</span>
-          <h2 class="section-title">We are AETHER</h2>
+          <h2 class="section-title">Quem somos</h2>
         </div>
         <div class="about-right">
           <p class="about-text">
-            A collective of designers, engineers and strategists based between New York, London and São Paulo. We partner with ambitious companies to create digital products that set new standards for craft, clarity and impact.
+            PNTech é um estúdio focado em design e tecnologia. Atendemos todo o Brasil com soluções remotas e entregas de alta qualidade.
           </p>
           <div class="about-stats">
             <div class="stat">
               <span class="stat-number" data-target="120">0</span>
-              <span class="stat-label">Projects</span>
+              <span class="stat-label">Projetos</span>
             </div>
             <div class="stat">
-              <span class="stat-number" data-target="14">0</span>
-              <span class="stat-label">Countries</span>
+              <span class="stat-number" data-target="1">0</span>
+              <span class="stat-label">Países</span>
             </div>
             <div class="stat">
-              <span class="stat-number" data-target="8">0</span>
-              <span class="stat-label">Years</span>
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Anos</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact (atualizado) -->
     <section id="contact" class="contact">
       <div class="contact-inner">
         <h2 class="contact-title">
-          <span class="line-wrapper"><span class="line">Let's create</span></span>
-          <span class="line-wrapper"><span class="line">something</span></span>
-          <span class="line-wrapper"><span class="line">extraordinary</span></span>
+          <span class="line-wrapper"><span class="line">Vamos criar</span></span>
+          <span class="line-wrapper"><span class="line">algo</span></span>
+          <span class="line-wrapper"><span class="line">extraordinário</span></span>
         </h2>
-        <a href="mailto:hello@aether.studio" class="contact-email magnetic" data-strength="0.2">
-          hello@aether.studio
-        </a>
-        <div class="contact-info">
-          <div>
-            <span>New York</span>
-            <p>120 Broadway, 15th Floor</p>
-          </div>
-          <div>
-            <span>London</span>
-            <p>1 Canada Square, Canary Wharf</p>
-          </div>
-          <div>
-            <span>São Paulo</span>
-            <p>Av. Paulista, 1578</p>
-          </div>
+        <div class="contact-ctas">
+          <a href="mailto:pntech.digital@gmail.com" class="contact-email magnetic" data-strength="0.2">pntech.digital@gmail.com</a>
+          <a href="https://instagram.com/pntech.store" class="contact-cta" target="_blank" rel="noopener">@pntech.store</a>
+        </div>
+        <p class="contact-location">Atendemos todo o Brasil • Base: Itaparica, BA (atendimento online)</p>
+      </div>
+    </section>
+
+    <!-- GitHub Portfolio (nova seção) -->
+    <section id="github" class="github-portfolio">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Portfólio no GitHub</h2>
+      </div>
+      <div class="github-grid">
+        <div class="repo-card">
+          <h3>Meu perfil no GitHub</h3>
+          <p>Veja mais repositórios e projetos aqui.</p>
+          <a class="repo-link" href="https://github.com/peuofc927-cmd" target="_blank" rel="noopener">Visitar GitHub</a>
+        </div>
+        <div class="repo-card">
+          <h3>Site Demo (este projeto)</h3>
+          <p>Exemplo de site estático e interação — pronto para apresentação.</p>
+          <a class="repo-link" href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">Abrir repositório</a>
         </div>
       </div>
     </section>
@@ -266,15 +266,15 @@
     <div class="footer-top">
       <div class="footer-logo">AETHER</div>
       <div class="footer-links">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Behance</a>
-        <a href="#">Twitter</a>
+        <a href="https://instagram.com/pntech.store" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 AETHER Studio. All rights reserved.</p>
-      <p>Designed & Built with precision.</p>
+      <p>© 2026 PNTech. Todos os direitos reservados.</p>
+      <p>Design & desenvolvimento — PNTech</p>
     </div>
   </footer>
 
