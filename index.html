@@ -11,30 +11,22 @@
   <meta property="og:description" content="PNTech - design, desenvolvimento e experiência digital. Portfólio e contato: pntech.digital@gmail.com" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://peuofc927-cmd.github.io/site_demo/" />
-
-  <!-- Simple SVG favicon -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23c8ff00'/%3E%3Ctext x='50' y='58' font-size='42' text-anchor='middle' font-family='Inter, Arial' fill='%23050505'%3EPN%3C/text%3E%3C/svg%3E" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- GSAP + Plugins -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <!-- Lenis: CDN com caminho estável -->
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Custom Cursor -->
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
 
-  <!-- Preloader -->
   <div class="preloader">
     <div class="preloader-inner">
       <div class="preloader-logo">PNTech</div>
@@ -45,7 +37,6 @@
     </div>
   </div>
 
-  <!-- Navigation -->
   <nav class="nav">
     <div class="nav-logo">
       <a href="#hero" id="brand-logo">PNTech</a>
@@ -65,7 +56,6 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
   <div class="mobile-menu">
     <div class="mobile-menu-links">
       <a href="#work">Trabalhos</a>
@@ -75,9 +65,7 @@
     </div>
   </div>
 
-  <!-- Main Content -->
   <main>
-    <!-- Hero -->
     <section id="hero" class="hero">
       <div class="hero-bg">
         <div class="hero-gradient"></div>
@@ -111,7 +99,6 @@
       </div>
     </section>
 
-    <!-- Marquee -->
     <div class="marquee">
       <div class="marquee-track">
         <span>Design • Desenvolvimento • Motion • Branding • Consultoria •</span>
@@ -119,72 +106,78 @@
       </div>
     </div>
 
-    <!-- Work (com imagens geradas) -->
     <section id="work" class="work">
       <div class="section-header">
         <span class="section-number">01</span>
         <h2 class="section-title">Projetos selecionados</h2>
       </div>
       <div class="work-grid">
-        <!-- Autocontent AI -->
         <article class="work-item" data-index="01">
           <a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">
-            <div class="work-image">
-              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%23101511'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>autocontent-ai</text></svg>" alt="autocontent-ai" />
+            <div class="work-image project-cover cover-ai">
+              <div class="project-cover-inner">
+                <span class="project-kicker">AI</span>
+                <span class="project-title">autocontent-ai</span>
+              </div>
               <div class="work-overlay"></div>
             </div>
             <div class="work-info">
               <h3>autocontent-ai</h3>
-              <p>Geração automática de conteúdo — inteligência aplicada.</p>
+              <p>Geração automática de conteúdo</p>
             </div>
           </a>
         </article>
 
-        <!-- Meu Portfólio -->
         <article class="work-item" data-index="02">
           <a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">
-            <div class="work-image">
-              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%230a0a0a'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>meu-portf-lio</text></svg>" alt="meu-portf-lio" />
+            <div class="work-image project-cover cover-portfolio">
+              <div class="project-cover-inner">
+                <span class="project-kicker">PORTFÓLIO</span>
+                <span class="project-title">meu-portf-lio</span>
+              </div>
               <div class="work-overlay"></div>
             </div>
             <div class="work-info">
               <h3>meu-portfólio</h3>
-              <p>Apresentação de trabalhos e estudos de caso.</p>
+              <p>Apresentação de trabalhos</p>
             </div>
           </a>
         </article>
 
-        <!-- NEXUSCORE-IA -->
         <article class="work-item" data-index="03">
           <a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">
-            <div class="work-image">
-              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%230a0a0a'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>NEXUSCORE-IA</text></svg>" alt="NEXUSCORE-IA" />
+            <div class="work-image project-cover cover-nexus">
+              <div class="project-cover-inner">
+                <span class="project-kicker">IA</span>
+                <span class="project-title">NEXUSCORE</span>
+              </div>
               <div class="work-overlay"></div>
             </div>
             <div class="work-info">
               <h3>NEXUSCORE-IA</h3>
-              <p>Soluções de IA e automação.</p>
+              <p>Soluções de automação</p>
             </div>
           </a>
         </article>
 
-        <!-- Site Demo (este projeto) -->
         <article class="work-item" data-index="04">
           <a href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">
-            <div class="work-image">
-              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%23101010'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>site_demo</text></svg>" alt="site_demo" />
+            <div class="work-image project-cover cover-demo">
+              <div class="project-cover-inner">
+                <span class="project-kicker">SITE</span>
+                <span class="project-title">site_demo</span>
+              </div>
               <div class="work-overlay"></div>
             </div>
             <div class="work-info">
               <h3>site_demo</h3>
-              <p>Exemplo de site estático e interações.</p>
+              <p>Exemplo de site interativo</p>
             </div>
           </a>
         </article>
       </div>
     </section>
 
-    <!-- Services -->
     <section id="services" class="services">
       <div class="section-header">
         <span class="section-number">02</span>
@@ -218,7 +211,6 @@
       </div>
     </section>
 
-    <!-- About -->
     <section id="about" class="about">
       <div class="about-content">
         <div class="about-left">
@@ -247,7 +239,6 @@
       </div>
     </section>
 
-    <!-- Contact (atualizado) -->
     <section id="contact" class="contact">
       <div class="contact-inner">
         <h2 class="contact-title">
@@ -263,7 +254,6 @@
       </div>
     </section>
 
-    <!-- GitHub Portfolio (nova seção) -->
     <section id="github" class="github-portfolio">
       <div class="section-header">
         <span class="section-number">04</span>
@@ -288,7 +278,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-logo">PNTech</div>
@@ -304,6 +293,8 @@
       <p>Design & desenvolvimento — PNTech</p>
     </div>
   </footer>
+
+  <a class="floating-cta" href="#github" aria-label="Ver portfólio">Ver portfólio</a>
 
   <script src="script.js"></script>
 </body>
