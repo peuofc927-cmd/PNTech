@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AETHER — Estúdio de Design & Tecnologia</title>
-  <meta name="description" content="AETHER é um estúdio de design e tecnologia criando experiências digitais extraordinárias. Portfólio e contato PNTech." />
-  
+  <title>PNTech — Estúdio de Design & Tecnologia</title>
+  <meta name="description" content="PNTech é um estúdio de design e tecnologia, entregando produtos digitais, marcas e experiências imersivas para clientes em todo o Brasil." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PNTech — Estúdio de Design & Tecnologia" />
+  <meta property="og:description" content="PNTech - design, desenvolvimento e experiência digital. Portfólio e contato: pntech.digital@gmail.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://peuofc927-cmd.github.io/site_demo/" />
+
+  <!-- Simple SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23c8ff00'/%3E%3Ctext x='50' y='58' font-size='42' text-anchor='middle' font-family='Inter, Arial' fill='%23050505'%3EPN%3C/text%3E%3C/svg%3E" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
-  
+
   <!-- GSAP + Plugins -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -24,22 +33,22 @@
   <!-- Custom Cursor -->
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
- 
+
   <!-- Preloader -->
   <div class="preloader">
     <div class="preloader-inner">
-      <div class="preloader-logo">AETHER</div>
+      <div class="preloader-logo">PNTech</div>
       <div class="preloader-progress">
         <div class="preloader-bar"></div>
       </div>
       <div class="preloader-percent">0%</div>
     </div>
   </div>
- 
+
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-logo">
-      <a href="#hero" id="brand-logo">AETHER</a>
+      <a href="#hero" id="brand-logo">PNTech</a>
     </div>
     <div class="nav-links">
       <a href="#work" class="nav-link" data-text="Trabalhos">Trabalhos</a>
@@ -55,7 +64,7 @@
       </button>
     </div>
   </nav>
- 
+
   <!-- Mobile Menu -->
   <div class="mobile-menu">
     <div class="mobile-menu-links">
@@ -65,7 +74,7 @@
       <a href="#contact">Contato</a>
     </div>
   </div>
- 
+
   <!-- Main Content -->
   <main>
     <!-- Hero -->
@@ -80,20 +89,19 @@
           <span>Excelência Digital</span>
         </div>
         <h1 class="hero-title">
-          <span class="line-wrapper"><span class="line">Criamos</span></span>
-          <span class="line-wrapper"><span class="line">experiências</span></span>
-          <span class="line-wrapper"><span class="line">extraordinárias</span></span>
+          <span class="line-wrapper"><span class="line">PNTech</span></span>
+          <span class="line-wrapper"><span class="line">Design &</span></span>
+          <span class="line-wrapper"><span class="line">Tecnologia</span></span>
         </h1>
         <p class="hero-subtitle">
-          Estúdio PNTech — design, desenvolvimento e experiência digital com entrega nacional e atendimento remoto.
+          Projetos digitais e marcas para empresas que querem se destacar. Atendemos todo o Brasil — atendimento remoto.
         </p>
         <div class="hero-cta">
           <a href="#work" class="btn-primary magnetic" data-strength="0.3">
-            <span>Ver Trabalhos</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>Ver Portfólio</span>
           </a>
           <a href="#contact" class="btn-secondary magnetic" data-strength="0.3">
-            <span>Fale Conosco</span>
+            <span>Entrar em Contato</span>
           </a>
         </div>
       </div>
@@ -111,52 +119,67 @@
       </div>
     </div>
 
-    <!-- Work (mantido em inglês) -->
+    <!-- Work (com imagens geradas) -->
     <section id="work" class="work">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2 class="section-title">Projetos Selecionados</h2>
+        <h2 class="section-title">Projetos selecionados</h2>
       </div>
       <div class="work-grid">
+        <!-- Autocontent AI -->
         <article class="work-item" data-index="01">
-          <div class="work-image">
-            <img src="assets/burger-hero.jpg" alt="Projeto destaque"/>
-            <div class="work-overlay"></div>
-          </div>
-          <div class="work-info">
-            <h3>Nova Finance</h3>
-            <p>Plataforma Fintech</p>
-          </div>
+          <a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">
+            <div class="work-image">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%23101511'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>autocontent-ai</text></svg>" alt="autocontent-ai" />
+              <div class="work-overlay"></div>
+            </div>
+            <div class="work-info">
+              <h3>autocontent-ai</h3>
+              <p>Geração automática de conteúdo — inteligência aplicada.</p>
+            </div>
+          </a>
         </article>
+
+        <!-- Meu Portfólio -->
         <article class="work-item" data-index="02">
-          <div class="work-image">
-            <div class="work-image-inner"></div>
-            <div class="work-overlay"></div>
-          </div>
-          <div class="work-info">
-            <h3>Lumen Health</h3>
-            <p>Aplicativo de Saúde</p>
-          </div>
+          <a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">
+            <div class="work-image">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%230a0a0a'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>meu-portf-lio</text></svg>" alt="meu-portf-lio" />
+              <div class="work-overlay"></div>
+            </div>
+            <div class="work-info">
+              <h3>meu-portfólio</h3>
+              <p>Apresentação de trabalhos e estudos de caso.</p>
+            </div>
+          </a>
         </article>
+
+        <!-- NEXUSCORE-IA -->
         <article class="work-item" data-index="03">
-          <div class="work-image">
-            <div class="work-image-inner"></div>
-            <div class="work-overlay"></div>
-          </div>
-          <div class="work-info">
-            <h3>Orbit Space</h3>
-            <p>Brand & Website</p>
-          </div>
+          <a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">
+            <div class="work-image">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%230a0a0a'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>NEXUSCORE-IA</text></svg>" alt="NEXUSCORE-IA" />
+              <div class="work-overlay"></div>
+            </div>
+            <div class="work-info">
+              <h3>NEXUSCORE-IA</h3>
+              <p>Soluções de IA e automação.</p>
+            </div>
+          </a>
         </article>
+
+        <!-- Site Demo (este projeto) -->
         <article class="work-item" data-index="04">
-          <div class="work-image">
-            <div class="work-image-inner"></div>
-            <div class="work-overlay"></div>
-          </div>
-          <div class="work-info">
-            <h3>Vertex AI</h3>
-            <p>Design de Produto</p>
-          </div>
+          <a href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">
+            <div class="work-image">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'><rect width='100%' height='100%' fill='%23101010'/><text x='50%' y='50%' font-family='Inter, Arial, sans-serif' font-size='48' fill='%23c8ff00' dominant-baseline='middle' text-anchor='middle'>site_demo</text></svg>" alt="site_demo" />
+              <div class="work-overlay"></div>
+            </div>
+            <div class="work-info">
+              <h3>site_demo</h3>
+              <p>Exemplo de site estático e interações.</p>
+            </div>
+          </a>
         </article>
       </div>
     </section>
@@ -253,9 +276,13 @@
           <a class="repo-link" href="https://github.com/peuofc927-cmd" target="_blank" rel="noopener">Visitar GitHub</a>
         </div>
         <div class="repo-card">
-          <h3>Site Demo (este projeto)</h3>
-          <p>Exemplo de site estático e interação — pronto para apresentação.</p>
-          <a class="repo-link" href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">Abrir repositório</a>
+          <h3>Projetos em destaque</h3>
+          <ul>
+            <li><a href="https://github.com/peuofc927-cmd/autocontent-ai" target="_blank" rel="noopener">autocontent-ai</a></li>
+            <li><a href="https://github.com/peuofc927-cmd/meu-portf-lio" target="_blank" rel="noopener">meu-portf-lio</a></li>
+            <li><a href="https://github.com/peuofc927-cmd/NEXUSCORE-IA" target="_blank" rel="noopener">NEXUSCORE-IA</a></li>
+            <li><a href="https://github.com/peuofc927-cmd/site_demo" target="_blank" rel="noopener">site_demo</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -264,7 +291,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-top">
-      <div class="footer-logo">AETHER</div>
+      <div class="footer-logo">PNTech</div>
       <div class="footer-links">
         <a href="https://instagram.com/pntech.store" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
